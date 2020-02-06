@@ -1,4 +1,4 @@
-name: "Hello World"
+name: "Npm check updates"
 description: "Greet someone and record the time"
 inputs:
   who-to-greet: # id of input

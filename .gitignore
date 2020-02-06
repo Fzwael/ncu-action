@@ -1,9 +1,6 @@
 # dependencies
 /node_modules
 
-# dist folder
-/dist
-
 # IDEs and editors
 /.idea
 .project

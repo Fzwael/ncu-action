@@ -19,5 +19,9 @@
   "homepage": "https://github.com/Fzwael/ncu-action#readme",
   "devDependencies": {
     "@zeit/ncc": "^0.21.0"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.2",
+    "@actions/github": "^2.1.0"
   }
 }

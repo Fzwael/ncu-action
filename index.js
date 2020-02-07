@@ -12,7 +12,7 @@ try {
         packageManager: 'npm'
     }).then((upgraded) => {
         if (Object.keys(upgraded).length > 0) {
-            core.setFailed(`dependencies to upgrade: ${upgraded}`);
+            core.setFailed(`dependencies to upgrade: ${JSON.stringify(upgraded)}`);
         } else {
             console.log('Everything is up to date. Enjoy!');
         }

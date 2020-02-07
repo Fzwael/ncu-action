@@ -1,15 +1,22 @@
 const core = require('@actions/core');
-const github = require('@actions/github');
+const ncu = require('npm-check-updates');
 
 try {
-    // `who-to-greet` input defined in action metadata file
-    const nameToGreet = core.getInput('who-to-greet');
-    console.log(`Hello ${nameToGreet}!`);
-    const time = (new Date()).toTimeString();
-    core.setOutput("time", time);
-    // Get the JSON webhook payload for the event that triggered the workflow
-    const payload = JSON.stringify(github.context.payload, undefined, 2)
-    console.log(`The event payload: ${payload}`);
+    // `ncu-options` input defined in action metadata file
+    const ncuOptions = core.getInput('ncu-options');
+    console.log(`Running ncu with the options ${ncuOptions}!`);
+
+    // Run the ncu command
+    // TODO : add other options
+    ncu.run({
+        packageManager: 'npm'
+    }).then((upgraded) => {
+        if (Object.keys(upgraded).length > 0) {
+            core.setFailed(`dependencies to upgrade: ${JSON.stringify(upgraded)}`);
+        } else {
+            console.log('Everything is up to date. Enjoy!');
+        }
+    });
 } catch (error) {
     core.setFailed(error.message);
 }

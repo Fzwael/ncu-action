@@ -1,0 +1,17 @@
+on: [push]
+
+jobs:
+  test_beta_job:
+    runs-on: ubuntu-latest
+    name: A job to test the latest beta ncu-action
+    steps:
+      # To use this repository's private action, you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+            ref: "test-new-action"
+      - name: Test the beta step
+        uses: ./ # Uses an action in the root directory
+        id: test_beta
+        with:
+          ncu-options: ""

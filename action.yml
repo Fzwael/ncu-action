@@ -1,13 +1,11 @@
 name: "Npm check updates"
-description: "Greet someone and record the time"
+description: "An action to check if your dependencies are up to date"
 inputs:
-  who-to-greet: # id of input
-    description: "Who to greet"
+  # Check : https://www.npmjs.com/package/npm-check-updates#options
+  ncu-options:
+    description: "List of option to pass to ncu"
     required: true
-    default: "World"
-outputs:
-  time: # id of output
-    description: "The time we greeted you"
+    default: ""
 runs:
   using: "node12"
   main: "dist/index.js"

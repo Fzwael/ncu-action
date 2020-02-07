@@ -1,12 +1,12 @@
 on: [push]
 
 jobs:
-  hello_world_job:
+  test_released_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: A job to test the latest released ncu-action
     steps:
-    - name: Hello world action step
-      id: hello
+    - name: Test the released step
+      id: test_released
       uses: fzwael/ncu-action@v1.0.0
       with:
         who-to-greet: 'Wael Fezai'

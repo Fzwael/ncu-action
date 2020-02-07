@@ -4,7 +4,7 @@ inputs:
   # Check : https://www.npmjs.com/package/npm-check-updates#options
   ncu-options:
     description: "List of option to pass to ncu"
-    required: true
+    required: false
     default: ""
 runs:
   using: "node12"

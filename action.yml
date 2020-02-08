@@ -1,5 +1,8 @@
 name: "Npm check updates"
 description: "An action to check if your dependencies are up to date"
+branding:
+  icon: "chevrons-up"
+  color: "purple"
 inputs:
   # Check : https://www.npmjs.com/package/npm-check-updates#options
   ncu-options:

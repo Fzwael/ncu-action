@@ -1,3 +1,5 @@
+name: Test developement version
+
 on: [push]
 
 jobs:

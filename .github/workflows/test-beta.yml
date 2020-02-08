@@ -9,7 +9,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-            ref: "test-new-action"
+            ref: "dev"
       - name: Test the beta step
         uses: ./ # Uses an action in the root directory
         id: test_beta

@@ -9,8 +9,5 @@ jobs:
     steps:
     - name: Test the released step
       id: test_released
-      uses: fzwael/ncu-action@v1.0.0
-      with:
-        who-to-greet: 'Wael Fezai'
-    - name: Get the output time
-      run: echo "The time was ${{ steps.hello.outputs.time }}"
+      uses: fzwael/ncu-action@v1.1.0
+  

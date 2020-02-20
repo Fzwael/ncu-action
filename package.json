@@ -4,7 +4,9 @@
   "description": "\"# ncu-action\"",
   "main": "index.js",
   "scripts": {
-    "build": "ncc build index.js -m"
+    "build": "ncc build index.js -m",
+    "check-updates": "ncu",
+    "update-dependencies": "ncu -u"
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,7 @@
   },
   "homepage": "https://github.com/Fzwael/ncu-action#readme",
   "devDependencies": {
-    "@zeit/ncc": "^0.21.0"
+    "@zeit/ncc": "^0.21.1"
   },
   "dependencies": {
     "@actions/core": "^1.2.2",

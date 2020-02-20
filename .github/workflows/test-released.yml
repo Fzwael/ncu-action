@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to test the latest released ncu-action
     steps:
+    - uses: actions/checkout@v1
     - name: Test the released step
       id: test_released
       uses: fzwael/ncu-action@v1.1.0
+      with:
+        ncu-options: ""

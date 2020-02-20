@@ -10,4 +10,3 @@ jobs:
     - name: Test the released step
       id: test_released
       uses: fzwael/ncu-action@v1.1.0
-  

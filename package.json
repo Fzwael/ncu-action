@@ -1,7 +1,7 @@
 {
   "name": "ncu-action",
   "version": "1.1.0",
-  "description": "\"# ncu-action\"",
+  "description": "ncu-action",
   "main": "index.js",
   "scripts": {
     "build": "ncc build index.js -m",

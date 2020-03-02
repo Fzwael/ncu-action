@@ -23,7 +23,7 @@
     "@zeit/ncc": "^0.21.1"
   },
   "dependencies": {
-    "@actions/core": "^1.2.2",
-    "npm-check-updates": "^4.0.2"
+    "@actions/core": "^1.2.3",
+    "npm-check-updates": "^4.0.3"
   }
 }

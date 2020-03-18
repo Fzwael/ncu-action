@@ -24,6 +24,6 @@
   },
   "dependencies": {
     "@actions/core": "^1.2.3",
-    "npm-check-updates": "^4.0.3"
+    "npm-check-updates": "^4.0.4"
   }
 }

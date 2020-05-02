@@ -6,7 +6,9 @@
   "scripts": {
     "build": "ncc build index.js -m",
     "check-updates": "ncu",
-    "update-dependencies": "ncu -u"
+    "update-dependencies": "ncu -u",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,8 @@
   },
   "dependencies": {
     "@actions/core": "^1.2.3",
-    "npm-check-updates": "^4.1.0"
-  }
+    "npm-check-updates": "^4.1.0",
+    "snyk": "^1.316.2"
+  },
+  "snyk": true
 }

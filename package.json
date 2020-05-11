@@ -22,12 +22,12 @@
   },
   "homepage": "https://github.com/Fzwael/ncu-action#readme",
   "devDependencies": {
-    "@zeit/ncc": "^0.21.1"
+    "@zeit/ncc": "^0.22.1"
   },
   "dependencies": {
-    "@actions/core": "^1.2.3",
-    "npm-check-updates": "^4.1.2",
-    "snyk": "^1.316.2"
+    "@actions/core": "^1.2.4",
+    "npm-check-updates": "^5.0.0",
+    "snyk": "^1.319.2"
   },
   "snyk": true
 }

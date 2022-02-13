@@ -25,9 +25,9 @@
     "@zeit/ncc": "^0.22.3"
   },
   "dependencies": {
-    "@actions/core": "^1.2.6",
-    "npm-check-updates": "^7.0.2",
-    "snyk": "^1.362.1"
+    "@actions/core": "^1.6.0",
+    "npm-check-updates": "^12.3.0",
+    "snyk": "^1.852.0"
   },
   "snyk": true
 }

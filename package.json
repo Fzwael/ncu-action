@@ -27,7 +27,7 @@
   "dependencies": {
     "@actions/core": "^1.6.0",
     "npm-check-updates": "^12.3.0",
-    "snyk": "^1.852.0"
+    "snyk": "^1.996.0"
   },
   "snyk": true
 }

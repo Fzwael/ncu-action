@@ -27,6 +27,9 @@ jobs:
     - name: Test the released step
       id: test_released
       uses: fzwael/ncu-action@v1
+      with:
+        // Optional options to be passed to NCU in JSON format.
+        ncu-options: "{ \"jsonUpgraded\": true }"
   
 ```
 

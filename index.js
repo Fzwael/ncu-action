@@ -11,7 +11,7 @@ try {
     // Run the ncu command
     ncu.run({
         packageManager: 'npm',
-        ...ncuOptionsObject,
+        ...ncuOptionsObject
     }).then((upgraded) => {
         if (Object.keys(upgraded).length > 0) {
             core.setFailed(`dependencies to upgrade: ${JSON.stringify(upgraded)}`);

@@ -6,10 +6,12 @@ try {
     const ncuOptions = core.getInput('ncu-options');
     console.log(`Running ncu with the options ${ncuOptions}!`);
 
+    const ncuOptionsObject = JSON.parse(ncuOptions);
+
     // Run the ncu command
-    // TODO : add other options
     ncu.run({
-        packageManager: 'npm'
+        packageManager: 'npm',
+        ...ncuOptionsObject
     }).then((upgraded) => {
         if (Object.keys(upgraded).length > 0) {
             core.setFailed(`dependencies to upgrade: ${JSON.stringify(upgraded)}`);
